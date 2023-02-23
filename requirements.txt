@@ -1,0 +1,10 @@
+Django
+psycopg2-binary
+python-dotenv
+whitenoise
+Pillow
+uWSGI>=2.0.19.1,<2.1
+boto3>=1.12.0,<1.13.0
+django-storages>=1.9.1,<1.10.0
+flake8
+django-ckeditor

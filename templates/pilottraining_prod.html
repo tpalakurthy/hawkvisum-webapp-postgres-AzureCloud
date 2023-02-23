@@ -1,0 +1,445 @@
+{% load static %} {% load i18n %}
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html>
+<!--<![endif]-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+  ================================================== -->
+    <!--  Icon font -->
+    <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.7.2/css/all.css " integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr " crossorigin="anonymous " />
+    <!-- Icon -->
+    <link rel="icon " href="{% static 'images/com_icon.png' %} " type="image/gif " />
+    <!-- bootstrap.min css -->
+    <link rel="stylesheet " href="{% static 'plugins/bootstrap/css/bootstrap.min.css' %} ">
+    <!-- Lightbox.min css -->
+    <link rel="stylesheet " href="{% static 'plugins/lightbox2/dist/css/lightbox.min.css' %} ">
+    <!-- animation css -->
+    <link rel="stylesheet " href="{% static 'plugins/themefisher-font/style.css' %} ">
+    <link rel="stylesheet " href="{% static 'plugins/animate/animate.css' %} ">
+    <!-- Slick Carousel -->
+    <link rel="stylesheet " href="{% static 'plugins/slick/slick.css' %} ">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet " href="{% static 'css/style.css' %} ">
+    <link rel="stylesheet " href="{% static 'css/pilottraining_prod.css' %} ">
+
+    <link rel="stylesheet " href="{% static 'css/bootstrap.min.css' %} ">
+
+    <!-- SEO
+  ================================================== -->
+  <meta name="description" content="HawkVisum AERO VR simulator for Pilot Training with Virtual Reality &amp; Augmented Reality technologies. Simulators developed as per industry Standards for multiple airlines like Cessna, Diamond, Airbus, Boeing &amp; Bombardier.">
+
+    <!-- HTML Meta Tags -->
+    <title>VR &amp; AR Pilot Training | HawkVisum | Virtual Experiences Company </title>
+    <meta name="description" content="HawkVisum provide dedicated VR, AR, AI, and IoT-based multiple solutions across industries. Check out our extensive products!">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://www.hawkvisum.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="VR &amp; AR Products | Virtual Experiences Company | HawkVisum">
+    <meta property="og:description" content="HawkVisum provide dedicated VR, AR, AI, and IoT-based multiple solutions across industries. Check out our extensive products!">
+    <meta property="og:image" content="{% static 'images/products/brief-2.jpeg' %}">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="https://twitter.com/HawkVisum">
+    <meta property="twitter:url" content="https://www.hawkvisum.com/">
+    <meta name="twitter:title" content="VR &amp; AR Products | Virtual Experiences Company | HawkVisum">
+    <meta name="twitter:description" content="HawkVisum provide dedicated VR, AR, AI, and IoT-based multiple solutions across industries. Check out our extensive products!">
+    <meta name="twitter:image" content="{% static 'images/products/brief-2.jpeg' %}">
+
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+
+
+</head>
+
+    <body id="body ">
+
+        <div id="preloader">
+            <div class='preloader'>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <!--
+    Fixed Navigation
+    ==================================== -->
+        <header class="navigation fixed-top">
+            <div class="container">
+                <!-- main nav -->
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <!-- logo -->
+                    <a class="navbar-brand logo" href="{% url 'homepage' %}">
+                        <img class="logo-default" src="{% static 'images/logo_1.png' %}" alt="logo" />
+                        <img class="logo-white" src="{% static 'images/logo_1.png' %}" alt="logo" />
+                    </a>
+                    <!-- /logo -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navigation">
+                        <ul class="navbar-nav ml-auto text-center">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="{% url 'homepage' %}" target="_blank_" style="color: black">Home</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="{% url 'aboutpage' %}" target="_blank_" style="color: black">About</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="{% url 'servicespage' %}" target="_blank_" style="color: black">Services</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="{% url 'productspage' %}" target="_blank_" style="color: black">Products</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" href="{% url 'contactpage' %}" target="_blank_" style="color: black">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- /main nav -->
+            </div>
+        </header>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- Showcase -->
+        <section class="section-a">
+            <div class="container">
+                <div>
+                    <h1 style="font-family: 'Times New Roman', Times, serif; color:#2f219c">The future of pilot training.</h1>
+                    <h2 style="font-family: 'Times New Roman', Times, serif; color:#2f219c">
+                    We provide the demanding pilot with a true flight experience in the virtual world.
+                    </h2>
+                    <p style="font-family: 'Times New Roman', Times, serif; color:#057bb5">From familiarisation with a aircraft cockpit and demanding scenario-based trainings on multiple terrain flying and emergency trainings, simulation with HawkVisum is tailored to the needs of the trainee.</p>
+                </div>
+            <img src="{% static 'images/products/pilot-t.png' %}" alt="" />
+            </div>
+        </section>
+  
+        <!-- Large Text -->
+        <section id="about" class="section-b" style="background-image: url({% static 'images/products/vr.png' %})">
+            <div class="overlay">
+                <div class="section-b-inner py-5">
+                    <h2 class="text-2">Effective & Efficient</h2>
+                    <h3 class="text-5 mt-1">Train your pilots with high level of confidence with Increased safety.</h3>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+
+        <div><h1 style="font-family: 'Times New Roman', Times, serif; color:#2f219c; font-weight:bold; text-align:center;">Our Pilot Simulators</h1></div>
+
+        <section class="cards-wrapper">
+        
+            <div class="card-grid-space">
+                <a class="card1" style="--bg-img: url({% static 'images/products/cessna.jpeg' %})">
+                    <div>
+                        <h1>Cessna 172s</h1>
+                        <h3>Launched</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card-grid-space">
+                <a class="card1" style="--bg-img: url({% static 'images/products/A320neo.jpeg' %})">
+                    <div>
+                        <h1>Airbus A320</h1>
+                        <h3>Launching Soon</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="card-grid-space">
+                <a class="card1" style="--bg-img: url({% static 'images/products/Boeing_737.jpeg' %})">
+                    <div>
+                        <h1>Boeing 737</h1>
+                        <h3>Launching Soon</h3>
+                    </div>
+                </a>
+            </div>
+
+        </section>
+
+        <br>
+
+        <section class="about-2 section" id="about" style="background-color: #24063b">
+            <div class="container">
+                <div class="row">
+
+                    <!-- section title -->
+                    <div class="col-12">
+                        <div class="title text-center">
+                            <h2 style="font-family: 'Times New Roman', Times, serif; font-weight:bold; color:white">What solutions do we offer?</h2>
+                            <div class="border"></div>
+                        </div>
+                    </div>
+                    <!-- /section title -->
+
+                    <div class="col-md-6">
+                        <img src="{% static 'images/products/problem-solution.png' %}" class="img-fluid" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="checklist">
+                            <li style="font-family: 'Times New Roman', Times, serif; font-size:25px; color:white;">Aircraft Familiarization / Cabin Familiarization</li>
+                            <li style="font-family: 'Times New Roman', Times, serif; font-size:25px; color:white">Pre-flight Preparations / Pre Take-Off Checks </li>
+                            <li style="font-family: 'Times New Roman', Times, serif; font-size:25px; color:white">Emergency Situation Training / Night Flight Training</li>
+                            <li style="font-family: 'Times New Roman', Times, serif; font-size:25px; color:white">Flight Assistance / Weather based training</li>
+                            <li style="font-family: 'Times New Roman', Times, serif; font-size:25px; color:white">Basic Manoeuvres / Custom Assessment programs</li>
+                        </ul>
+                        <br>
+                        <a href="{% url 'cataloguepage'%}" class="btn btn-outline-primary">Download Catalog</a>
+                    </div>
+                </div>
+                <!-- End row -->
+            </div>
+            <!-- End container -->
+        </section>
+
+        <br>
+
+        <h1 style="font-family: 'Times New Roman', Times, serif; font-weight:bold; font-size:50px; text-align:center; color:#363e4d ">
+            Your Benefits
+        </h1>
+
+        <div class="tabs">
+            <div class="tab-2">
+                <label for="tab2-1" style="font-family: 'Times New Roman', Times, serif; font-weight:bold; text-align:center; color:#363e4d ">INSTITUTIONS</label>
+                <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
+                <div>
+                    <p style='font-family: "Times New Roman", Times, serif; font-size: 20px;'>Flying VFR in IMC? Boost your training efficiency and schedule your students for flight training on the HawkVisum Training Solution under virtually perfect weather conditions, regardless of the forecast. Your students will graduate at a high skill level and need less average flight time to obtain their pilot licenses – a gain in safety and a boost to your flight school's reputation. Reserve your training solution today and set the new standards in flight training with us. Be among the first FTIs to offer the most advanced flight training compared to your competitors.</p>
+                    <p style='font-family: "Times New Roman", Times, serif;font-size: 20px;color: #111942;'><i class="fa fa-circle"></i>Set new standards in flight training</p>
+                    <p style='font-family: "Times New Roman", Times, serif;font-size: 20px;color: #111942;'><i class="fa fa-circle"></i>Increase your training efficiency</p>
+                    <p style='font-family: "Times New Roman", Times, serif;font-size: 20px;color: #111942;'><i class="fa fa-circle"></i>Attract more student pilots</p>
+                    <p style='font-family: "Times New Roman", Times, serif;font-size: 20px;color: #111942;'><i class="fa fa-circle"></i>Cost and time efficient trainings and checks</p>
+                    <p style='font-family: "Times New Roman", Times, serif;font-size: 20px;color: #111942;'><i class="fa fa-circle"></i>Improve safety</p>
+                </div>
+            </div>
+            <div class="tab-2">
+                <label for="tab2-2" style="font-family: 'Times New Roman', Times, serif; font-weight:bold; text-align:center; color:#363e4d ">STUDENTS</label>
+                <input id="tab2-2" name="tabs-two" type="radio">
+                <div>
+                    <p style='font-family: "Times New Roman", Times, serif;font-size: 20px;'>Improve your confidence for your next check ride. Perform your proficiency check on our Simulators. No matter what real weather conditions prevail outside, you can perform refreshers at any time and in any weather. Ready for the next challenge? With scenario-based training, you will improve your situational awareness and learn to master unforeseen situations calmly and systematically. As an trainee pilot, you will especially benefit from simulator training. Push the envelope to its limits! Train demanding scenarios and emergency procedures that cannot be trained on a real aircraft for safety reasons – completely risk-free on the simulator.</p>
+                    <p style='font-family: "Times New Roman", Times, serif;font-size: 20px;color: #111942;'><i class="fa fa-circle"></i>Reduce training costs</p>    
+                    <p style='font-family: "Times New Roman", Times, serif;font-size: 20px;color: #111942;'><i class="fa fa-circle"></i>Perform your proficiency check</p>
+                    <p style='font-family: "Times New Roman", Times, serif;font-size: 20px;color: #111942;'><i class="fa fa-circle"></i>Practise routine procedures efficiently</p>
+                    <p style='font-family: "Times New Roman", Times, serif;font-size: 20px;color: #111942;'><i class="fa fa-circle"></i>Master challenging scenarios</p>
+                </div>
+            </div>
+        </div>
+  
+        <!-- Gallery -->
+        <section class="section-c">
+            <div class="gallery">
+            <a href="https://i.ibb.co/CHLBZnp/gal2323.jpg" class="big"
+                ><img src="https://i.ibb.co/CHLBZnp/gal2323.jpg" alt=""
+            /></a>
+            <a href="https://i.ibb.co/4pBbhfY/gal39834.jpg" class="big"
+                ><img src="https://i.ibb.co/4pBbhfY/gal39834.jpg" alt=""
+            /></a>
+            <a href="https://i.ibb.co/xSnHP7g/gal43884.jpg" class="big"
+                ><img src="https://i.ibb.co/xSnHP7g/gal43884.jpg" alt=""
+            /></a>
+            <a href="https://i.ibb.co/QN6Bnrb/gal4958.jpg" class="big"
+                ><img src="https://i.ibb.co/QN6Bnrb/gal4958.jpg" alt=""
+            /></a>
+            <a href="https://i.ibb.co/dGZvj75/gal4545.jpg" class="big">
+                <img src="https://i.ibb.co/dGZvj75/gal4545.jpg" alt=""
+            /></a>
+            <a href="https://i.ibb.co/S6FVFNt/gal74744.jpg" class="big"
+                ><img src="https://i.ibb.co/S6FVFNt/gal74744.jpg" alt=""
+            /></a>
+            </div>
+        </section>
+        <div class="ratio ratio-16x9">
+            <iframe src="https://www.youtube.com/embed/vlDzYIIOYmM" title="YouTube video" allowfullscreen></iframe>
+        </div>
+
+        <section class="call-to-action section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2 style="font-family: 'Times New Roman', Times, serif">Break the barriers of limitations with us to create an <br>unmatched efficiency with our Products & Solutions</h2>
+                        <i class="fa-thin fa-arrow-up-right"></i>
+                        <a href="https://cmwehgjly8e.typeform.com/to/EdugN5X1" class="btn btn-primary btn-lg" style="font-family: 'Times New Roman', Times, serif">Request Demo</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-center text-lg-start bg-light text-muted">
+        <!-- Section: Links  -->
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span style="font-family: 'Times New Roman', Times, serif">Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <a href="mailto:info@company.com" info@hawkvisum.com class="me-4 text-reset">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://www.linkedin.com/company/hawkvisum" class="me-4 text-reset">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://hawkvisum.medium.com/" class="me-4 text-reset">
+                <i class="fab fa-medium"></i>
+            </a>
+            <a href="https://twitter.com/HawkVisum" class="me-4 text-reset">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCIZYD2712A6NCYV0lZvwiPw/featured" class="me-4 text-reset">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.facebook.com/HawkVisum-111024551571000" class="me-4 text-reset">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/hawkvisum/" class="me-4 text-reset">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+        <!-- Section: Links  -->
+        <section class="">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <img class="logo-white" src="{% static 'images/logo_1.png' %}" alt="logo" style="height: 65px" />
+                        <br>
+                        <br>
+                        <p style="font-family: 'Times New Roman', Times, serif; text-align: center">
+                            Experience the world of Virtual Reality & Augmented Reality you've never seen before.
+                        </p>
+                    </div>
+
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4" style="font-family: 'Times New Roman', Times, serif">
+                            Quick Links
+                        </h6>
+                        <p style="font-family: 'Times New Roman', Times, serif">
+                            <a href="{% url 'aboutpage' %}" class="text-reset">About</a>
+                        </p>
+                        <p style="font-family: 'Times New Roman', Times, serif">
+                            <a href="{% url 'whypage' %}" class="text-reset">Why HawkVisum?</a>
+                        </p>
+                        <p style="font-family: 'Times New Roman', Times, serif">
+                            <a href="{% url 'blogpage' %}" class="text-reset">Blog</a>
+                        </p>
+                        <p style="font-family: 'Times New Roman', Times, serif">
+                            <a href="{% url 'careerpage' %}" class="text-reset">Careers</a>
+                        </p>
+                        <p style="font-family: 'Times New Roman', Times, serif">
+                            <a href="{% url 'contactpage' %}" class="text-reset">Contact</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4" style="font-family: 'Times New Roman', Times, serif">
+                            Useful links
+                        </h6>
+                        <p style="font-family: 'Times New Roman', Times, serif">
+                            <a href="{% url 'productspage' %}" class="text-reset">Products</a>
+                        </p>
+                        <p style="font-family: 'Times New Roman', Times, serif">
+                            <a href="{% url 'servicespage' %}" class="text-reset">Services</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4" style="font-family: 'Times New Roman', Times, serif">
+                            Contact
+                        </h6>
+                        <p style="font-family: 'Times New Roman', Times, serif">
+                            <i class="fas fa-home me-3"></i> Hyderabad, Telangana, India
+                        </p>
+                        <p style="font-family: 'Times New Roman', Times, serif">
+                            <i class="fas fa-envelope me-3"></i> info@hawkvisum.com
+                        </p>
+                        <p style="font-family: 'Times New Roman', Times, serif"><i class="fas fa-phone me-3"></i> +917013098367</p>
+                        <p style="font-family: 'Times New Roman', Times, serif"><i class="fas fa-phone me-3"></i> + 919177437756</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            <p style="font-family: 'Times New Roman', Times, serif">&copy; 2022 HawkVisum, Inc. All rights reserved.</p>
+        </div>
+        <!-- Copyright -->
+    </footer>
+        <!-- end footer -->
+
+        <!--
+        Essential Scripts
+        =====================================-->
+        <!-- Main jQuery -->
+        <script src="{% static 'plugins/jquery/jquery.min.js' %}"></script>
+        <!-- Google Map -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ"></script>
+        <script src="{% static 'plugins/google-map/gmap.js' %}"></script>
+
+        <!-- Form Validation -->
+        <script src="{% static 'plugins/form-validation/jquery.form.js' %}"></script>
+        <script src="{% static 'plugins/form-validation/jquery.validate.min.js' %}"></script>
+
+        <!-- icon -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+        <!-- Bootstrap4 -->
+        <script src="{% static 'plugins/bootstrap/js/bootstrap.min.js' %}"></script>
+        <!-- Parallax -->
+        <script src="{% static 'plugins/parallax/jquery.parallax-1.1.3.js' %}"></script>
+        <!-- lightbox -->
+        <script src="{% static 'plugins/lightbox2/dist/js/lightbox.min.js' %}"></script>
+        <!-- Owl Carousel -->
+        <script src="{% static 'plugins/slick/slick.min.js' %}"></script>
+        <!-- filter -->
+        <script src="{% static 'plugins/filterizr/jquery.filterizr.min.js' %}"></script>
+        <!-- Smooth Scroll js -->
+        <script src="{% static 'plugins/smooth-scroll/smooth-scroll.min.js' %}"></script>
+
+        <!-- Custom js -->
+        <script src="{% static 'js/script.js' %}"></script>
+
+    </body>
+</html>

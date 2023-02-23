@@ -1,0 +1,204 @@
+{% load static %} {% load i18n %}
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html>
+<!--<![endif]-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+  ================================================== -->
+    <!--  Icon font -->
+    <link rel="stylesheet " href="https://use.fontawesome.com/releases/v5.7.2/css/all.css " integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr " crossorigin="anonymous " />
+    <!-- Icon -->
+    <link rel="icon " href="{% static 'images/com_icon.png' %} " type="image/gif " />
+    <!-- bootstrap.min css -->
+    <link rel="stylesheet " href="{% static 'plugins/bootstrap/css/bootstrap.min.css' %} ">
+    <!-- Lightbox.min css -->
+    <link rel="stylesheet " href="{% static 'plugins/lightbox2/dist/css/lightbox.min.css' %} ">
+    <!-- animation css -->
+    <link rel="stylesheet " href="{% static 'plugins/themefisher-font/style.css' %} ">
+    <link rel="stylesheet " href="{% static 'plugins/animate/animate.css' %} ">
+    <!-- Slick Carousel -->
+    <link rel="stylesheet " href="{% static 'plugins/slick/slick.css' %} ">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet " href="{% static 'css/style.css' %} ">
+    <link rel="stylesheet " href="{% static 'css/products.css' %} ">
+
+    <link rel="stylesheet " href="{% static 'css/bootstrap.min.css' %} ">
+
+    <!-- SEO
+  ================================================== -->
+    <meta name="keywords" content="virtual reality,augmented reality,vr world,mixed reality,vr experience,virtual technology,ar vr,immersed vr,3d vr,vr virtual reality,vr simulator, virtual reality simulators,virtual 3d,vr technology,vr companies,virtual reality companies,virtual reality experience,vr development,3d virtual reality,ar and vr,augmented reality companies,augmented reality technology,virtual experience,virtual reality technology,vr tech,ar experience,virtual reality simulator,vr immersive experience,vr augmented reality,ar immersion,virtual reality and augmented reality,ar reality,vr ai,virtual and augmented reality,ar augmented reality,mixed reality vr,ar vr technology,virtual reality augmented reality,virtual reality business,business augmented reality,ar vr companies,augmented reality for industry,ai vr,augmented reality development,augmented reality experience,ar vr development,virtual and augmented reality companies,vr and ar companies,augmented reality tech companies,virtual augmented and mixed reality,immersive virtual reality technology,virtual immersive experience,ar vr and ai,pilot training simulators,vr pilot training,pilot training,pilot simulators,vr simulators india,vr simulators in india,pilot simulators in india,aviation training solutions,vr aviation solutions,virtual reality aviation solutions,vr pilot solutions,simulator companies in india,virtual reality companies in india,augmented reality companies in india,hawkvisum vr,hawkvisum virtual reality,virtual reality companies contact details,augmented reality companies contact details,vr companies contact details,ar companies contact details,virtual reality companies in india,augmented reality companies in india,ar companies in india,vr companies in india,vr products,ar products,virtual reality products,augmented reality products,virtual reality solutions,augmented reality solutions" />
+
+    <!-- HTML Meta Tags -->
+    <title>VR &amp; AR Products | HawkVisum | Virtual Experiences Company </title>
+    <meta name="description" content="HawkVisum provide dedicated Virtual Reality, Augmented Reality &amp; AI simulators for multiple sectors across industries. Check out our extensive products for Airline Pilot Training, Airline Cabin Crew Training, Aircraft Engine Inspection, Health Care & Education">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://www.hawkvisum.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="VR &amp; AR Products | Virtual Experiences Company | HawkVisum">
+    <meta property="og:description" content="HawkVisum provide dedicated VR, AR, AI, and IoT-based multiple solutions across industries. Check out our extensive products!">
+    <meta property="og:image" content="{% static 'images/products/brief-2.jpeg' %}">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="https://twitter.com/HawkVisum">
+    <meta property="twitter:url" content="https://www.hawkvisum.com/">
+    <meta name="twitter:title" content="VR &amp; AR Products | Virtual Experiences Company | HawkVisum">
+    <meta name="twitter:description" content="HawkVisum provide dedicated VR, AR, AI, and IoT-based multiple solutions across industries. Check out our extensive products!">
+    <meta name="twitter:image" content="{% static 'images/products/brief-2.jpeg' %}">
+
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+
+
+</head>
+
+<body id="body ">
+
+    <div id="preloader">
+        <div class='preloader'>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <!--
+Fixed Navigation
+==================================== -->
+    <header class="navigation fixed-top">
+        <div class="container">
+            <!-- main nav -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <!-- logo -->
+                <a class="navbar-brand logo" href="{% url 'homepage' %}">
+                    <img class="logo-default" src="{% static 'images/logo_1.png' %}" alt="logo" />
+                    <img class="logo-white" src="{% static 'images/logo_2.png' %}" alt="logo" />
+                </a>
+                <!-- /logo -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+                <div class="collapse navbar-collapse" id="navigation">
+                    <ul class="navbar-nav ml-auto text-center">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="{% url 'homepage' %}" target="_blank_">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="{% url 'aboutpage' %}" target="_blank_">About</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="{% url 'servicespage' %}" target="_blank_">Services</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="{% url 'productspage' %}" target="_blank_">Products</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="{% url 'contactpage' %}" target="_blank_">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- /main nav -->
+        </div>
+    </header>
+
+    <div class="buttons_background">
+        <div class="slider-item th-fullpage hero-area" style="background: linear-gradient(to right, #0f0c29, #302b63, #24243e); background-size: cover;">
+            <div class="container-fluid mb-5">
+                <div class="text-center mt-5">
+                    <h1 style="font-family: 'Times New Roman', Times, serif; color: white;">Our Products</h1>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <a style="text-decoration: none" href="{% url 'pilotproductpage' %}" target="_blank_">
+                            <div class="box">
+                                <div class="our-services settings">
+                                    <div class="icon"><img src="{% static 'images/products/2316157.png' %}" width="100" height="100"></div>
+                                    <h4 style="font-family: 'Times New Roman', Times, serif;">Airline Pilot Training</h4>
+                                    <p style="color: black; font-family: 'Times New Roman', Times, serif;">Train your Pilots over multiple real-time situations with high level of confidence with Increased safety.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a style="text-decoration: none" href="{% url 'cabincrewproductpage' %}" target="_blank_">
+                            <div class="box">
+                                <div class="our-services settings">
+                                    <div class="icon"><img src="{% static 'images/products/stewardess.png' %}" width="100" height="100"></div>
+                                    <h4 style="font-family: 'Times New Roman', Times, serif;">Cabin Crew Training</h4>
+                                    <p style="color: black; font-family: 'Times New Roman', Times, serif;">Train you Airline Attendees with multiple situation based issues and get hands-on experience.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a style="text-decoration: none" href="{% url 'engineinspectionproductpage' %}" target="_blank_">
+                            <div class="box">
+                                <div class="our-services settings">
+                                    <div class="icon">
+                                        <img src="{% static 'images/products/engine.png' %}" width="100" height="100">
+                                    </div>
+                                    <h4 style="font-family: 'Times New Roman', Times, serif;">Aircraft Engine Inspection</h4>
+                                    <p style="color: black; font-family: 'Times New Roman', Times, serif;">Enhance Aircraft Inspection skills that enables training on multiple issues with zero damage.</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--
+    Essential Scripts
+    =====================================-->
+    <!-- Main jQuery -->
+    <script src="{% static 'plugins/jquery/jquery.min.js' %} "></script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ "></script>
+    <script src="{% static 'plugins/google-map/gmap.js' %} "></script>
+
+    <!-- Form Validation -->
+    <script src="{% static 'plugins/form-validation/jquery.form.js' %} "></script>
+    <script src="{% static 'plugins/form-validation/jquery.validate.min.js' %} "></script>
+
+    <!-- icon -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+
+    <!-- Bootstrap4 -->
+    <script src="{% static 'plugins/bootstrap/js/bootstrap.min.js' %} "></script>
+    <!-- Parallax -->
+    <script src="{% static 'plugins/parallax/jquery.parallax-1.1.3.js' %} "></script>
+    <!-- lightbox -->
+    <script src="{% static 'plugins/lightbox2/dist/js/lightbox.min.js' %} "></script>
+    <!-- Owl Carousel -->
+    <script src="{% static 'plugins/slick/slick.min.js' %} "></script>
+    <!-- filter -->
+    <script src="{% static 'plugins/filterizr/jquery.filterizr.min.js' %} "></script>
+    <!-- Smooth Scroll js -->
+    <script src="{% static 'plugins/smooth-scroll/smooth-scroll.min.js' %} "></script>
+
+    <!-- Custom js -->
+    <script src="{% static 'js/script.js' %} "></script>
+    <script src="{% static 'js/productadv2.js' %} "></script>
+
+
+</body>
+
+</html>

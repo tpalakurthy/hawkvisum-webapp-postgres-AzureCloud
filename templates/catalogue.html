@@ -1,0 +1,222 @@
+{% load static %} {% load i18n %}
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html prefix="og: https://ogp.me/ns#">
+    <!--<![endif]-->
+    
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Download Catalogue</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/catalogue.css' %}">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-lg-6 div-1 mb-3">
+
+
+            </div>
+            <div class="col-lg-6 px-1 px-md-2 d-flex  flex-row">
+                <div class="q-1 px-2"></div>
+                <div class="mt-2">
+                    <h1 class="heading">You’re one step closer for Integrating exceptional skill training solutions at
+                        your
+                        Institutions to<strong> Train & Analyse students skills.</strong>.</h1>
+                    <p class="heading-second mt-2 mb-4">Complete this form to schedule a live demo with our specialists.</p>
+                    <a href="#top" class="btn-1 mt-3">Book a Demo</a><span>press
+                        <strong>Enter</strong></span>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <section id="b-demo">
+        <div class="container mt-5">
+            <div class="row">
+
+                <div class="col-lg-8 mx-auto">
+
+                    <form method="POST" name="google-sheet">
+
+                        {% csrf_token %}
+
+                        <div class="d-1 d-flex justify-content-center flex-column" id="top">
+                            <label class="d-block">1 Your <strong>name?</strong></label>
+                            <input type="text" name ="input-section-name" class="d-block ms-0 ms-md-5 mb-4" placeholder="Type your answer here...">
+                            <div>
+                                <a href="#input-2" class="btn-1  ms-5 mt-4">OK <svg height="13" width="16" style="fill:#fff">
+                                        <path d="M14.293.293l1.414 1.414L5 12.414.293 7.707l1.414-1.414L5 9.586z">
+                                        </path>
+                                    </svg></a><span>press <strong>Enter</strong></span>
+                            </div>
+                        </div>
+
+                        <div id="input-2" class="d-1 d-flex justify-content-center flex-column">
+                            <label class="d-block">2 Your <strong>Designation?</strong></label>
+                            <input type="text" name ="input-section-designation" class="d-block  ms-0 ms-md-5 mt-4 mb-4" placeholder="Type your answer here...">
+                            <div>
+                                <a href="#input-3" class="btn-1 ms-5 mt-4">OK <svg height="13" width="16" style="fill:#fff">
+                                        <path d="M14.293.293l1.414 1.414L5 12.414.293 7.707l1.414-1.414L5 9.586z">
+                                        </path>
+                                    </svg></a><span>press <strong>Enter</strong></span>
+                            </div>
+                        </div>
+
+                        <div id="input-3" class="d-1 d-flex justify-content-center flex-column">
+                            <label class="d-block">3 Your <strong>Email Id?</strong></label>
+                            <input type="email" name ="input-section-email" class="d-block  ms-0 ms-md-5 mt-4 mb-4" placeholder="Type your answer here...">
+                            <div>
+                                <a href="#input-4" class="btn-1 ms-5 mt-4">OK <svg height="13" width="16" style="fill:#fff">
+                                        <path d="M14.293.293l1.414 1.414L5 12.414.293 7.707l1.414-1.414L5 9.586z">
+                                        </path>
+                                    </svg></a><span>press <strong>Enter</strong></span>
+                            </div>
+                        </div>
+
+                        <div id="input-4" class="d-1 d-flex justify-content-center flex-column">
+                            <label class="d-block">4 Your <strong>Contact Number?</strong></label>
+                            <p class="lead ms-5 des">Please Mention With Country code(Ex:: +92 929999999)</p>
+                            <input type="text" name ="input-section-number" class="d-block  ms-0 ms-md-5 mt-4 mb-4" placeholder="Type your answer here...">
+                            <div>
+                                <a href="#input-5" class="btn-1 ms-5 mt-4">OK <svg height="13" width="16" style="fill:#fff">
+                                        <path d="M14.293.293l1.414 1.414L5 12.414.293 7.707l1.414-1.414L5 9.586z">
+                                        </path>
+                                    </svg></a><span>press <strong>Enter</strong></span>
+                            </div>
+                        </div>
+
+                        <div id="input-5" class="d-1 d-flex justify-content-center flex-column">
+                            <label class="d-block">5 Your <strong>Institution Name?</strong></label>
+                            <input type="text" name ="input-section-institution" class="d-block  ms-0 ms-md-5 mt-4 mb-4" placeholder="Type your answer here...">
+                            <div>
+                                <a href="#input-6" class="btn-1 ms-5 mt-4">OK <svg height="13" width="16" style="fill:#fff">
+                                        <path d="M14.293.293l1.414 1.414L5 12.414.293 7.707l1.414-1.414L5 9.586z">
+                                        </path>
+                                    </svg></a><span>press <strong>Enter</strong></span>
+                            </div>
+                        </div>
+
+                        <div id="input-6" class="d-1 d-flex justify-content-center flex-column">
+                            <label class="d-block">6 Your <strong>Institution Location?</strong></label>
+                            <input type="text" name ="input-section-location" class="d-block ms-0 ms-md-5 mt-4 mb-4" placeholder="Type your answer here...">
+                            <div>
+                                <a href="#input-7" class="btn-1 ms-5 mt-4">OK <svg height="13" width="16" style="fill:#fff">
+                                        <path d="M14.293.293l1.414 1.414L5 12.414.293 7.707l1.414-1.414L5 9.586z">
+                                        </path>
+                                    </svg></a><span>press <strong>Enter</strong></span>
+                            </div>
+                        </div>
+
+                        <div id="input-7" class="d-1 d-flex justify-content-center flex-column">
+                            <label class="d-block">7 Your <strong>Interested Simulator</strong></label>
+                            <br>
+                            <br>
+                            
+                            <div class="custom-radios col-md-2">
+                                <div class="border ms-5 px-2">
+                                    <span class="border rounded me-2 p-1 opt-a">A</span> Pilot Training Simulator
+                                    <input class="" type="radio" name="input-section-simulator" value="pilot" checked>
+                                    <label for="color-1">
+                                        <span>
+                                            <svg height="13" width="16">
+                                                <path
+                                                    d="M14.293.293l1.414 1.414L5 12.414.293 7.707l1.414-1.414L5 9.586z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                    </label>
+                                </div>
+
+                                <div class="border ms-5 px-2 mt-1">
+                                    <span class="border rounded me-2 p-1 opt-a">B</span> Cabin Crew Simulator
+                                    <input type="radio" id="color-2" name="input-section-simulator" value="cabin">
+                                    <label for="color-2">
+                                        <span>
+                                            <svg height="13" width="16">
+                                                <path
+                                                    d="M14.293.293l1.414 1.414L5 12.414.293 7.707l1.414-1.414L5 9.586z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                    </label>
+                                </div>
+
+                                <div class="border ms-5 px-2 mt-1">
+                                    <span class="border rounded me-2 p-1 opt-a">C</span> Aircraft Engine Inspection Simulator
+                                    <input type="radio" id="color-3" name="input-section-simulator" value="machine">
+                                    <label for="color-3">
+                                        <span>
+                                            <svg height="13" width="16">
+                                                <path
+                                                    d="M14.293.293l1.414 1.414L5 12.414.293 7.707l1.414-1.414L5 9.586z">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                    </label>
+                                </div>
+
+                            </div>
+
+                            <div>
+                                <a href="#input-8" class="btn-1  ms-5 mt-4">OK <svg height="13" width="16" style="fill:#fff">
+                                        <path d="M14.293.293l1.414 1.414L5 12.414.293 7.707l1.414-1.414L5 9.586z">
+                                        </path>
+                                    </svg></a><span>press <strong>Enter</strong></span>
+                            </div>
+
+                        </div>
+
+                        <div id="input-8" class="d-1 d-flex justify-content-center flex-column">
+                            <label class="d-block">8 Your <strong>Expectations?</strong></label>
+                            <input type="text" name ="input-section-inputs" class="d-block ms-0 ms-md-5 mt-4 mb-4" placeholder="Type your answer here...">
+                            <div class="mt-4">
+                                <button type="submit"class="btn btn-primary  ms-5 mt-4" name="submit"><strong>SUBMIT </strong></button>
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="msg" class="d-flex justify-content-center align-items-center">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="">Thanks for your Interest!</h2>
+                <P class="lead">Before our meeting, we shared our product catelogue do have look at it.<br>
+                Encourage you to discover more about our products.will get back to you shortly!!!</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzvVstCs2ofEl9o1FeFGyOAed0mBwaBtCxCbjOIqJB85je52EkU5Ef6fTpf2bWAXD0kXQ/exec'
+        const form = document.forms['google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+</body>
+
+</html>

@@ -1,0 +1,324 @@
+{% load static %} {% load i18n %} {% static "images" as baseUrl %}
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html>
+<!--<![endif]-->
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <!-- Mobile Specific Meta
+  ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+  ================================================== -->
+    <!--  Icon font -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+    <!-- Icon -->
+    <link rel="icon" href="{% static 'images/com_icon.png' %}" type="image/gif" />
+    <!-- bootstrap.min css -->
+    <link rel="stylesheet" href="{% static 'plugins/bootstrap/css/bootstrap.min.css' %}">
+    <!-- Lightbox.min css -->
+    <link rel="stylesheet" href="{% static 'plugins/lightbox2/dist/css/lightbox.min.css' %}">
+    <!-- animation css -->
+    <link rel="stylesheet" href="{% static 'plugins/themefisher-font/style.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/animate/animate.css' %}">
+    <!-- Slick Carousel -->
+    <link rel="stylesheet" href="{% static 'plugins/slick/slick.css' %}">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/careers.css' %}">
+
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+    <!-- SEO
+  ================================================== -->
+    <meta name="keywords" content="{{blog.keywords}}" />
+
+
+    <!-- HTML Meta Tags -->
+    <title>{{blog.topic_name}} | HawkVisum | Virtual Experiences Company </title>
+    <meta name="description" content="{{blog.topic_abstract}}">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="https://www.hawkvisum.com/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{blog.topic_name}} | Virtual Experiences Company | HawkVisum ">
+    <meta property="og:description" content="{{blog.topic_abstract}}">
+    <meta property="og:image" content="{{blog.image.url}}">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="https://twitter.com/HawkVisum">
+    <meta property="twitter:url" content="https://www.hawkvisum.com/">
+    <meta name="twitter:title" content="{{blog.topic_name}} | Virtual Experiences Company | HawkVisum ">
+    <meta name="twitter:description" content="{{blog.topic_abstract}}">
+    <meta name="twitter:image" content="{{blog.image.url}}">
+
+    <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+
+
+</head>
+
+<body id="body">
+
+    <div id="preloader">
+        <div class='preloader'>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <!--
+Fixed Navigation
+==================================== -->
+    <header class="navigation fixed-top">
+        <div class="container">
+            <!-- main nav -->
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <!-- logo -->
+                <a class="navbar-brand logo" href="{% url 'homepage' %}">
+                    <img class="logo-default" src="{% static 'images/logo_1.png' %}" alt="logo" />
+                    <img class="logo-white" src="{% static 'images/logo_2.png' %}" alt="logo" />
+                </a>
+                <!-- /logo -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+                <div class="collapse navbar-collapse" id="navigation">
+                    <ul class="navbar-nav ml-auto text-center">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="{% url 'homepage' %}" target="_blank_">Home</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="{% url 'aboutpage' %}" target="_blank_">About</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="{% url 'servicespage' %}" target="_blank_">Services</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="{% url 'productspage' %}" target="_blank_">Products</a>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="{% url 'contactpage' %}" target="_blank_">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- /main nav -->
+        </div>
+    </header>
+    <!--
+End Fixed Navigation
+==================================== -->
+
+    <section class="single-page-header" style="background-image: url({{blog.image.url}})">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </section>
+
+    <!-- blog details part start -->
+
+    <section class="blog-details section">
+        <div class="container">
+            <div class="row">
+                <article class="post">
+                    <!-- Post Content -->
+                    <h1>{{blog.topic_name}}</h1>
+                    <div class="post-content" style="overflow-wrap: break-word">
+                        <p style="text-align:justify">{{blog.topic_description|safe}}</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center text-lg-start bg-light text-muted ">
+        <!-- Section: Links  -->
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom ">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block ">
+                <span style="font-family: 'Times New Roman', Times, serif ">Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <a href="mailto:info@company.com " info@hawkvisum.com class="me-4 text-reset ">
+                <i class="fas fa-envelope "></i>
+            </a>
+            <a href="https://www.linkedin.com/company/hawkvisum " class="me-4 text-reset ">
+                <i class="fab fa-linkedin "></i>
+            </a>
+            <a href="https://hawkvisum.medium.com/ " class="me-4 text-reset ">
+                <i class="fab fa-medium "></i>
+            </a>
+            <a href="https://twitter.com/HawkVisum " class="me-4 text-reset ">
+                <i class="fab fa-twitter "></i>
+            </a>
+            <a href="https://www.youtube.com/channel/UCIZYD2712A6NCYV0lZvwiPw/featured " class="me-4 text-reset ">
+                <i class="fab fa-youtube "></i>
+            </a>
+            <a href="https://www.facebook.com/HawkVisum-111024551571000 " class="me-4 text-reset ">
+                <i class="fab fa-facebook "></i>
+            </a>
+            <a href="https://www.instagram.com/hawkvisum/ " class="me-4 text-reset ">
+                <i class="fab fa-instagram "></i>
+            </a>
+
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+        <!-- Section: Links  -->
+        <section class=" ">
+            <div class="container text-center text-md-start mt-5 ">
+                <!-- Grid row -->
+                <div class="row mt-3 ">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 ">
+                        <!-- Content -->
+                        <img class="logo-white" src="{% static 'images/logo_1.png' %}" alt="logo" style="height: 65px" />
+                        <br>
+                        <br>
+                        <p style="font-family: 'Times New Roman', Times, serif; text-align: center ">
+                            Experience the world of Virtual Reality & Augmented Reality you've never seen before.
+                        </p>
+                    </div>
+
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 ">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4 " style="font-family: 'Times New Roman', Times, serif ">
+                            Quick Links
+                        </h6>
+                        <p style="font-family: 'Times New Roman', Times, serif ">
+                            <a href="{% url 'aboutpage' %} " class="text-reset ">About</a>
+                        </p>
+                        <p style="font-family: 'Times New Roman', Times, serif ">
+                            <a href="{% url 'whypage' %} " class="text-reset ">Why HawkVisum?</a>
+                        </p>
+                        <p style="font-family: 'Times New Roman', Times, serif ">
+                            <a href="{% url 'blogpage' %} " class="text-reset ">Blog</a>
+                        </p>
+                        <p style="font-family: 'Times New Roman', Times, serif ">
+                            <a href="{% url 'careerpage' %} " class="text-reset ">Careers</a>
+                        </p>
+                        <p style="font-family: 'Times New Roman', Times, serif ">
+                            <a href="{% url 'contactpage' %} " class="text-reset ">Contact</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 ">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4 " style="font-family: 'Times New Roman', Times, serif ">
+                            Useful links
+                        </h6>
+                        <p style="font-family: 'Times New Roman', Times, serif ">
+                            <a href="{% url 'productspage' %} " class="text-reset ">Products</a>
+                        </p>
+                        <p style="font-family: 'Times New Roman', Times, serif ">
+                            <a href="{% url 'servicespage' %} " class="text-reset ">Services</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 ">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4 " style="font-family: 'Times New Roman', Times, serif ">
+                            Contact
+                        </h6>
+                        <p style="font-family: 'Times New Roman', Times, serif ">
+                            <i class="fas fa-home me-3 "></i> Hyderabad, Telangana, India
+                        </p>
+                        <p style="font-family: 'Times New Roman', Times, serif ">
+                            <i class="fas fa-envelope me-3 "></i> info@hawkvisum.com
+                        </p>
+                        <p style="font-family: 'Times New Roman', Times, serif "><i class="fas fa-phone me-3 "></i> +917013098367</p>
+                        <p style="font-family: 'Times New Roman', Times, serif "><i class="fas fa-phone me-3 "></i> + 919177437756</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+
+        <!-- Copyright -->
+        <div class="text-center p-4 " style="background-color: rgba(0, 0, 0, 0.05); ">
+            <p style="font-family: 'Times New Roman', Times, serif ">&copy; 2022 HawkVisum, Inc. All rights reserved.</p>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+
+    <!-- end Footer Area
+    ========================================== -->
+
+
+
+    <!--
+    Essential Scripts
+    =====================================-->
+    <!-- Main jQuery -->
+    <script src="{% static 'plugins/jquery/jquery.min.js' %} "></script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu5nZKbeK-WHQ70oqOWo-_4VmwOwKP9YQ "></script>
+    <script src="{% static 'plugins/google-map/gmap.js' %} "></script>
+
+    <!-- Form Validation -->
+    <script src="{% static 'plugins/form-validation/jquery.form.js' %} "></script>
+    <script src="{% static 'plugins/form-validation/jquery.validate.min.js' %} "></script>
+
+    <!-- icon -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p " crossorigin="anonymous "></script>
+
+    <!-- Bootstrap4 -->
+    <script src="{% static 'plugins/bootstrap/js/bootstrap.min.js' %} "></script>
+    <!-- Parallax -->
+    <script src="{% static 'plugins/parallax/jquery.parallax-1.1.3.js' %} "></script>
+    <!-- lightbox -->
+    <script src="{% static 'plugins/lightbox2/dist/js/lightbox.min.js' %} "></script>
+    <!-- Owl Carousel -->
+    <script src="{% static 'plugins/slick/slick.min.js' %} "></script>
+    <!-- filter -->
+    <script src="{% static 'plugins/filterizr/jquery.filterizr.min.js' %} "></script>
+    <!-- Smooth Scroll js -->
+    <script src="{% static 'plugins/smooth-scroll/smooth-scroll.min.js' %} "></script>
+
+    <!-- Custom js -->
+    <script src="{% static 'js/script.js' %} "></script>
+
+
+</body>
+
+</html>
