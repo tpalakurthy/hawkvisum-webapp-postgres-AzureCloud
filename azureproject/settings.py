@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.sitemaps',
     'django.contrib.sites',
 
-    'home',
+    'home.apps.HomeConfig',
     'error_pages',
 
     'storages',
