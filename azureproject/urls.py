@@ -25,6 +25,7 @@ import error_pages
 from error_pages import views
 
 from home.sitemaps import blog_sitemap, staticviewssitemap
+import home.urls
 
 sitemaps = {
     'static': staticviewssitemap,
@@ -33,7 +34,7 @@ sitemaps = {
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("/", include('home.urls')),
+    path("", home.urls),
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps},
     name='django.contrib.sitemaps.views.sitemap')
 ]+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
