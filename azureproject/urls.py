@@ -25,7 +25,6 @@ import error_pages
 from error_pages import views
 
 from home.sitemaps import blog_sitemap, staticviewssitemap
-import home.urls
 
 sitemaps = {
     'static': staticviewssitemap,
