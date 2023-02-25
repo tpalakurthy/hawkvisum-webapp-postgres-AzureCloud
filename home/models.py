@@ -1,10 +1,12 @@
 from django.db import models
 from ckeditor.fields import RichTextField
 
+from cloudinary.models import CloudinaryField
+
 # About Page #
 class team_dynamic(models.Model):
 
-    image = models.ImageField(upload_to='team-pics', null=True, blank=True)
+    image = CloudinaryField('image')
     name = models.CharField(max_length=100,null=False)
     designation = models.CharField(max_length=100, null=False)
     linkedin_url = models.CharField(max_length=500, null=False)
@@ -28,7 +30,7 @@ class career_content_dynamic(models.Model):
 # Blog Page #
 class blog_content_dynamic(models.Model):
 
-    image = models.ImageField(upload_to='blog-pics', null=True, blank=True)
+    image = CloudinaryField('image')
     topic_name = models.CharField(max_length=100,null=False)
     slug = models.SlugField(null=True, blank=True)
     topic_abstract = models.CharField(max_length=500,null=True, blank=True)

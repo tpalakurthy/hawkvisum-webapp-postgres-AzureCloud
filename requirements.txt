@@ -8,3 +8,4 @@ boto3>=1.12.0,<1.13.0
 django-storages>=1.9.1,<1.10.0
 flake8
 django-ckeditor
+cloudinary
