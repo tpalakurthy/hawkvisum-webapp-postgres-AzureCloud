@@ -145,24 +145,15 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 STATICFILES_DIRS = [
      os.path.join(BASE_DIR, 'static')
      ]
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+ 
 
-DEFAULT_FILE_STORAGE = 'azureproject.custom_azure.AzureMediaStorage'
-
-AZURE_ACCOUNT_NAME = 'hawkvisumfilestorage'
-AZURE_ACCOUNT_KEY = 'VCVdWsO00YMX/5krpUj1r8cpBIaa+VMlymtg2iY88zNjGjOe8F/q99gOV1Eqfeu6+9r215u00gcd+AStp7mF1A=='
-
-AZURE_CUSTOM_DOMAIN = f'{AZURE_ACCOUNT_NAME}.blob.core.windows.net'
-AZURE_LOCATION=f'{AZURE_ACCOUNT_NAME}.blob.core.windows.net'
-
-MEDIA_LOCATION = 'http://{AZURE_ACCOUNT_NAME}.blob.core.windows.net/media'
-MEDIA_ROOT='http://{AZURE_ACCOUNT_NAME}.blob.core.windows.net'
-
-MEDIA_URL = f'https://{AZURE_CUSTOM_DOMAIN}/{MEDIA_LOCATION}/'
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
