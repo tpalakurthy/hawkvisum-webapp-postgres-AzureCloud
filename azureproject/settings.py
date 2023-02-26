@@ -49,9 +49,6 @@ INSTALLED_APPS = [
 
     'storages',
     'ckeditor',
-
-    'cloudinary_storage',
-    'cloudinary',
 ]
 
 SITE_ID = 1
@@ -148,12 +145,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-CLOUDINARY_STORAGE = {
-    'CLOUD_NAME': 'dmvwfzi5y',
-    'API_KEY': '758739175273728',
-    'API_SECRET': 'xNIXa6S2OyoZrwl4Ag-GxOn3sC4',
-}
-
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
      os.path.join(BASE_DIR, 'static')
@@ -163,8 +154,6 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
-
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.RawMediaCloudinaryStorage'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
